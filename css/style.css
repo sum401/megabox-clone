@@ -51,5 +51,28 @@ ul li{
     color: white;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    /* 메가박스 헤더 중앙과 양끝에 한번에 정렬하는 방법 float도 사용은 가능하다
+    비율이 정확하게 정렬이 가능하다*/
 
+}
+
+.vip{
+    display: flex;
+}
+.vip>li{
+    margin-right: 20px;
+    text-transform: uppercase;
+    /* 소문자를 대문자로 바꾸는  */
+}
+.icon-left{
+    display: flex;
+}
+#gnbLeft>li{
+    width: 150px;
+    text-align: center;
+}
+#gnbLeft{
+    color: blanchedalmond;
+    display: flex;
 }
