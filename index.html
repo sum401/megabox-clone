@@ -17,6 +17,21 @@
 <body>
  
         <h1 class="blind">메가박스</h1>
+
+
+
+        <div id="modal">
+            <div class="message">
+                <h2>알림 </h2>
+                <button id="close_x">&times;</button>
+                <p>로그인이 필요한 서비스 입니다.</p>
+                <button id="close_ok">닫기</button>
+            </div>
+        </div>
+
+
+
+        
         <div class="ad">
             <div class="ad-img">
              
@@ -86,7 +101,7 @@
             </div>
 
         </header>
-        <section>
+        <section id="main">
             <h2 class="blind">메가박스 박스오피스</h2>
             <article>
 
@@ -132,9 +147,12 @@
                                
                                     </div>
                                 </div>
-                                    <a href="#" class="favorite">3.9k</a>
-                                     <a href="#" class="booking">예매</a>
-                                  
+                                <div class="box-btns">
+                                    <a href="#" class="favorite">
+                                        <div class="heart"></div>3.9k
+                                    </a>
+                                    <a href="#" class="booking">예매</a>
+                                </div>
                         </li>
                         <li>
                         
@@ -168,8 +186,12 @@
                                
                                     </div>
                                 </div>
-                                <a href="#" class="favorite">3.9k</a>
-                                <a href="#" class="booking">예매</a>
+                                <div class="box-btns">
+                                    <a href="#" class="favorite">
+                                        <div class="heart"></div>3.9k
+                                    </a>
+                                    <a href="#" class="booking">예매</a>
+                                </div>
                         </li>
                         <li>
                         
@@ -203,8 +225,12 @@
                                
                                     </div>
                                 </div>
-                                <a href="#" class="favorite">3.9k</a>
-                                <a href="#" class="booking">예매</a>
+                                <div class="box-btns">
+                                    <a href="#" class="favorite">
+                                        <div class="heart"></div>3.9k
+                                    </a>
+                                    <a href="#" class="booking">예매</a>
+                                </div>
                         </li>
                         <li>
                         
@@ -238,8 +264,12 @@
                                
                                     </div>
                                 </div>
-                                <a href="#" class="favorite">3.9k</a>
-                                <a href="#" class="booking">예매</a>
+                                <div class="box-btns">
+                                    <a href="#" class="favorite">
+                                        <div class="heart"></div>3.9k
+                                    </a>
+                                    <a href="#" class="booking">예매</a>
+                                </div>
                                   
                         </li>
                       
@@ -247,6 +277,50 @@
                       
                       
                     </ol>
+                    <div id="search_extra">
+
+                       
+
+
+                        <div id="search">
+                            <form onsubmit="return fales">
+                                <fieldset>
+                                    <legend class="blind">영화검색</legend>
+                                    <input type="text" maxlength="20" placeholder="영화명을 입력하세요">
+                                    <input type="image" src="images/ico-search-white.png " alt="">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div><a href="#"> <img src="images/ico-schedule-main.png" alt=""> &nbsp; 상영시간표</a> </div>
+                        <div><a href="#"> <img src="images/ico-boxoffice-main.png" alt=""> &nbsp;박스오피스</a> </div>
+                        <div><a href="#"> <img src="images/ico-quick-reserve-main.png" alt=""> &nbsp;빠른예매</a> </div>
+
+                      
+
+                      
+                    </div>
+                    <div id="mouse">
+                        <img src="images/ico-mouse.png" alt="">
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
                        
                 
