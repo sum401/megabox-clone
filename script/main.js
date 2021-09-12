@@ -1,39 +1,48 @@
 $(function(){
-   
-   $('.ad-close').click(function(){
-      $(".ad").hide();
-   });
-
-
-
-
-   
-   $(".favorite").click(function(){
-      $("#modal").show();
-  });
-
-  $("#close_x").click(function(){
-      $("#modal").hide();
-  });
-  $("#close_ok").click(function(){
-      $("#modal").hide();
-  });
-
-
-
-
-  function movieExplorer(){
-   $("input[type=image]").click(function(){        
+    ad();
+    modal();
+    movieExplorer();
+    setInterval(mouseScroll, 1500);
+});
+function mouseScroll(){
+    $("#mouse").animate({
+        bottom: "-35"
+    },"swing",function(){
+        $("#mouse").animate({
+            bottom: "-5"
+        });
+    })
+}
+function movieExplorer(){
+    $("input[type=image]").click(function(){        
      
-       var keyword = $("input[type=text]").val();
-       if(!keyword) {
-           alert("영화명을 입력하셔야 합니다");
-       } else {
-           console.log(keyword);
-    
-           location.href="https://www.megabox.co.kr/movie?searchText="+keyword;
-       }
-   });
+        var keyword = $("input[type=text]").val();
+        if(!keyword) {
+            alert("영화명을 입력하셔야 합니다");
+        } else {
+            console.log(keyword);
+  
+            location.href="https://www.megabox.co.kr/movie?searchText="+keyword;
+        }
+    });
+}
+function modal() {    
+
+    $(".favorite").click(function(){
+        $("#modal").show();
+    });
+
+    $("#close_x").click(function(){
+        $("#modal").hide();
+    });
+    $("#close_ok").click(function(){
+        $("#modal").hide();
+    });
+}
+function ad(){
+    $(".ad-close").click(function(){
+        $(".ad").hide();
+    });
 }
 
 
@@ -44,75 +53,70 @@ $(function(){
 
 
 
-   
-   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // $(function(){
-//     $(".ad-close").click(function(){
-//         $(".ad").hide();
-//     });
-
-// $(".favorite").click(function(){
-//    $(".ad").hide();
-// });
-
-// $(".favorite").click(function(){
-//    $("#modal").show();
-// });
-
-// $("#close_x").click(function(){
-//    $("#modal").hide();
-// });
-
-// $("#close_ok").click(function(){
-//    $("#modal").hide();
-// });
-
-
-// // function movieExplorer({
-// //    $("input[type=image]").click(function(){
-// //       if(!$("input[type=text]").val()){
-// //          alert("영화명을 입력하셔야 합니다");
-// //       }
-// //    });
-// // });
-// function mouseScroll(){
-
-// $("#mouse").animate(){
-//        botton:-25;
-
-// },"swing",function(){
-
-//    $("#mouse").animate({
-//       botton:-5;
-
+   
+//    $('.ad-close').click(function(){
+//       $(".ad").hide();
 //    });
 
-// })
 
-// }
+
+
+//    $(".favorite").click(function(){
+//        $("#modal").show();
+
+//    });
+//    $("#close_x").click(function(){
+//     $("#modal").hide();
+
+//     });
+//     $("#close_ok").click(function(){
+//     $("#modal").hide();
+
+//     });
+
+//     function movieExplorer(){
+//         $("input[type=image]").click(function(){
+//             var keyword = $("input[type=text]").val();
+//             if(!keyword){
+//                 alert("영화명을 입력하셔야 합니다");
+//             } else{
+//                 console.log(keyword);
+//                 location.href="https://www.megabox.co.kr/movie?searchText="+keyword;
+
+
+//             }
+                  
+//         });
+//     }
+//     // setInterval(function() { ... }, 지연시간);
+
+//     function mouseScroll(){
+//         // setInterval( mouseScroll(){},1500);
+//         setInterval(function(){mouseScroll
+
+       
+
+   
+//         $("#mouse").animate({
+//             botton:"-20"
+//         } ,"swing",function(){
+//             $("#mouse").animate({
+//                 bottom:0
+//             });
+
+            
+//         } )
+//     },1500);
+
+//     }
+
+
+
+
+
+
+// });
 
 
 
@@ -153,6 +157,5 @@ $(function(){
 //  "supply":"Japan",
 //  "year":2020,
 // "poster":"your-name.jpg",
-//  "descript":"너의 이름은.. ......"},
+//  "descript":"너의 이름은.. ......"},]
 
-//     ]
