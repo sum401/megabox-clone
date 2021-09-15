@@ -625,3 +625,38 @@ padding: 0 0 27px 0;
 }
 li{list-style: none;}
 
+
+
+
+/* ---benefit--------------------------- */
+.ico-benefit{
+  padding: 130px 0 80px ;
+  margin: -100px  0 0 0;
+    background-color: purple;
+}
+
+.ico-benefit ul li{
+ 
+text-transform:uppercase;
+      color: #fff;
+      text-align: center;
+    
+  
+
+}
+
+
+.ico-benefit ul{
+    display: flex;
+    justify-content: space-between;
+
+  
+    max-width: 1100px;
+    margin:  0 auto;
+  
+    display: flex;
+}
+.ico-benefit ul figure{
+    margin: 20px 0;
+}
+
