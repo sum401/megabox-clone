@@ -538,18 +538,47 @@ width: calc(100% - 415px);}
     overflow: hidden;
 }
 .fit-left {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 530px;
+    display: flex;
     float: left;
     width: calc(100% - 430px); /* 원래 415px + 여백 15px */
     position: relative;
 }
 #carousel {
-    height: 285px;
+padding: 0 0 27px 0;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
 #control {
+    display: flex;
     position: absolute;
     bottom: 10px;
+    align-items: center;
+}
+
+.pager{display: flex;
+    margin: 5px 0 0 0 ;
+
+
+
+}
+.pager li.on{ background-color: rgb(56, 5, 49);}
+.pager li{
+    width: 20px;
+    height: 2px;
+    background: #ddd;
+    text-indent: -9999px;
+
+}
+
+.btns button{
+    font-weight: bold;
+    background-color: none;
+    color: rgb(56, 5, 49);
+    border: 0;
 }
 #slide-text {
     position: absolute;
@@ -562,10 +591,34 @@ width: calc(100% - 415px);}
     display: flex;
     flex: 1; /* flex item 확대, 축소 */
 }
+
+#campaign li:nth-child(2) img {
+    transform: scale(1.02);
+}
+#campaign li:nth-child(2) {
+    margin-left: 4%;
+    width: 30%;
+}
+#campaign li:nth-child(1) {
+    width: 66%;
+}
+#campaign li {
+    font-size: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
 #campaign img {
     max-width: 100%;
 }
 
+.fit-right a{
+    font-size: 0;
+    display: block;
+    overflow: hidden
+    ;
+
+    border-radius: 8px;
+}
 .fit-right {
     width: 415px;
     float: right;
