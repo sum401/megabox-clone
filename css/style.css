@@ -568,7 +568,7 @@ padding: 0 0 27px 0;
 
 .btns button{
     font-weight: bold;
-    background-color: none;
+    background: none;
     color: rgb(56, 5, 49);
     border: 0;
 }
@@ -721,12 +721,9 @@ height: 40px;
     color: white;
     padding: 10px 30px;
 }
-.info{
-    font-size: 1rem;
-  
-    width: calc(100% -300px);
+.info {
+    width: calc(100% - 300px);  
     margin-left: 30px;
-
 }
 #frame{
     border-radius: 10px;
@@ -895,6 +892,75 @@ height: 40px;
 #move {
     background: url("../images/ico-arr-right-gray.png") right center no-repeat;
     padding-right: 15px;
+}
+.icons li figcaption{padding: 5px 0;}
+.icons li{text-align: center;}
+.icons{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: .825rem;
+}
+
+
+/* --------------banner---------------- */
+.banner-wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.banner{
+    background-color: #111;
+
+}
+
+
+/* ----footer--------------------------------- */
+
+footer{  background-color: #fff;}
+.footer-wrap{
+  
+    width: 1100px;
+    margin:  0 auto;
+
+}
+.bnb-cinema{
+
+    justify-content: space-between;
+    display: flex;
+    font-size: .750rem;
+    padding: 20px 0 ;
+   
+}
+#bnb{
+    display: flex;
+    column-gap: 10px;
+}
+
+#cinema{
+    border: 1px solid #666;
+    font-size: .750rem;
+    background: none;
+    border-radius: 20px;
+    padding: 5px 10px    ;
+    width: 150px;
+    background: url(../images/ico-footer-search.png) no-repeat 20% center;
+  text-indent: 10%;
+  /* 돋보기 그림 정렬하기 */
+}
+.site-info{
+    display: flex;
+    justify-content: space-between;
+}
+address{
+    font-size: .750rem;
+   
+    font-style:normal;
+    margin: 0  auto  0 2%;
+}
+.sns{
+    margin: 0 0 0 auto;
+    display: flex;
 }
 
 
