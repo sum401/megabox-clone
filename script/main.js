@@ -3,7 +3,31 @@ $(function(){
     modal();
     movieExplorer();
     setInterval(mouseScroll, 1500);
+    // randomBanner();
+    // 캠페인 랜던 작동법
+
+
+
 });
+
+
+// function  randomBanner(){
+//     let ranNum = Math.ceil(Math.random()*3);
+  
+
+//     $("#campaign>li:first").html("<img src=\"images/campaign"+ranNum +".jpg\" alt=\"배너\">");
+
+// }
+   // 캠페인 랜던 작동법
+
+
+
+
+
+
+
+
+
 function mouseScroll(){
     $("#mouse").animate({
         bottom: "-35"
@@ -44,6 +68,9 @@ function ad(){
         $(".ad").hide();
     });
 }
+
+
+
 
 
 
